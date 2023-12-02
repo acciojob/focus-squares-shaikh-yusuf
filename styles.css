@@ -11,8 +11,16 @@
       transition: background-color 0.3s ease;
     }
 
-    #square1:hover ~ .lavender-square,
-    #square2:hover ~ .lavender-square,
-    #square3:hover ~ .lavender-square {
+    .lavender-square:hover {
+      background-color: #6F4E37;
+    }
+
+    .lavender-square:not(:hover) {
+      transition-delay: 0.3s; /* Delay the transition to avoid abrupt color change */
+    }
+
+    #square1:hover ~ .lavender-square:not(:hover),
+    #square2:hover ~ .lavender-square:not(:hover),
+    #square3:hover ~ .lavender-square:not(:hover) {
       background-color: #6F4E37;
     }
