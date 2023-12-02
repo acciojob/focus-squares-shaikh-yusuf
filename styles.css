@@ -1,1 +1,12 @@
 /*  your css code here. If applicable */
+.lavender {
+            width: 100px;
+            height: 100px;
+            background-color: #E6E6FA;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .coffee {
+            background-color: #6F4E37 !important;
+        }
