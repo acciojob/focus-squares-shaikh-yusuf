@@ -1,12 +1,18 @@
 /*  your css code here. If applicable */
-.lavender {
-            width: 100px;
-            height: 100px;
-            background-color: #E6E6FA;
-            margin: 10px;
-            display: inline-block;
-        }
 
-        .coffee {
-            background-color: #6F4E37 !important;
-        }
+      
+   .lavender-square {
+      width: 100px;
+      height: 100px;
+      background-color: #E6E6FA;
+      display: inline-block;
+      margin: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #square1:hover ~ .lavender-square,
+    #square2:hover ~ .lavender-square,
+    #square3:hover ~ .lavender-square {
+      background-color: #6F4E37;
+    }
